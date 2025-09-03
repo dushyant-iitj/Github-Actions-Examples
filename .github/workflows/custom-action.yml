@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  my_job:
+    name: A job to say hello
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: dushyant-iitj/github-actions-custom@0.0.1
+        with:
+          name: Nest Xiao
+
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: |
+          echo "The greeting: ${{ steps.hello.outputs.greeting }}"
