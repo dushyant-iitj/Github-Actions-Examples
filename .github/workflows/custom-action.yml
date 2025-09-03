@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: dushyant-iitj/github-actions-custom@0.0.1
+        uses: dushyant-iitj/github-actions-custom@0.0.3
         with:
           name: Nest Xiao
 
