@@ -16,6 +16,6 @@ jobs:
           name: Nest Xiao
 
       # Use the output from the `hello` step
-      - name: Get the output time
+      - name: Get the output
         run: |
           echo "The greeting: ${{ steps.hello.outputs.greeting }}"
